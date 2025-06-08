@@ -1,0 +1,16 @@
+{
+  "name": "cipc-theme",
+  "version": "1.0.0",
+  "description": "Ayudantías de algoritmos y complejidad",
+  "scripts": {
+    "start": "marp --server --watch --html --allow-local-files --theme cipc.css .",
+    "html": "marp --html --allow-local-files --theme cipc.css main.md",
+    "pdf": "marp --pdf --html --allow-local-files --theme cipc.css main.md",
+    "pptx": "marp --pptx --html --allow-local-files --theme cipc.css main.md",
+    "pptxd": "marp --pptx --html --allow-local-files --pptx-editable --theme cipc.css main.md"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.2"
+  }
+}
