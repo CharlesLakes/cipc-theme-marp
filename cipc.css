@@ -1,6 +1,19 @@
 /* Import default Marp theme */
 @import 'default';
 
+
+/* ==========================================
+   COLORS
+   ========================================== */
+
+:root{
+    --primary-color: #15214c;
+    --secondary-color: #e27d00;
+    --tertiary-color: #f0ebeb;
+    --text-color: #ffffff;
+    /* --link-color:  */
+}
+
 /* ==========================================
    TITLE SLIDE STYLING
    ========================================== */
@@ -8,9 +21,8 @@
 /* Main title on title slide */
 
 section.title > h1 {
-  font-family: "CMU Bright", "Segoe UI Semibold";
-  color: #ffffff;
-  background-color: #15214c;
+  color: var(--text-color);
+  background-color: var(--primary-color);
   text-align: center;
 
   top: 25%;
@@ -28,10 +40,11 @@ section.title > h1 {
    CONTENT SLIDE STYLING
    ========================================== */
 
-/* Header bar for content slides (excludes title slide) */
+/* Header bar for content slid
+.titlees (excludes title slide) */
 section:not(.title) h1:nth-of-type(1) {
-  background: #15214c;
-  color: white;
+  background: var(--primary-color);
+  color: var(--text-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -71,9 +84,9 @@ header {
   left: 0%;
   box-sizing: border-box;
   width: 50%;
-  background: #e27d00;
+  background: var(--secondary-color);
   display: flex;
-  color: white;
+  color: var(--text-color);
   justify-content: right;
   align-items: center;
   padding: 3px 5px;
@@ -87,9 +100,9 @@ footer {
   left: 50%;
   box-sizing: border-box;
   width: 50%;
-  background: #15214c;
+  background: var(--primary-color);
   display: flex;
-  color: white;
+  color: var(--text-color);
   justify-content: space-between;
   align-items: center;
   padding: 3px 5px;
@@ -106,5 +119,41 @@ section::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-color);
+}
+
+
+/* ==========================================
+   Masterkrab ELEMENTS
+   ========================================== */
+
+
+/* Horizontal tables */
+.table-horizontal {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.table-horizontal th,
+.table-horizontal td{
+  padding: 0.5rem 1rem;
+}
+
+
+
+
+/* Make a layout for two columns */
+.two-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-align: justify;
+}
+
+
+/* Author list styling for portrait */
+.author{
+  text-align: center;
+  list-style: none;
 }
