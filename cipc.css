@@ -157,3 +157,8 @@ section::after {
   text-align: center;
   list-style: none;
 }
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
