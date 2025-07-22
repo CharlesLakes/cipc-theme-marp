@@ -4,8 +4,15 @@ paginate: true
 header: Búsqueda Binaria
 footer: Campamento Invernal de Programación Competitiva
 ---
+
 <!-- _class: title -->
+
 # Búsqueda Binaria
+
+<ul class="author">
+  <li>NOMBRE</li>
+  <li>CORREO</li>
+</ul>
 
 ---
 
@@ -29,7 +36,7 @@ footer: Campamento Invernal de Programación Competitiva
 ```python
 datos = [1, 3, 5, 7, 9, 11, 13]
 objetivo = 9
-````
+```
 
 Queremos saber si `9` está en la lista y en qué posición.
 
@@ -86,12 +93,7 @@ def busqueda_binaria(lista, objetivo):
 
 # Resumen
 
-* Solo funciona en **listas ordenadas**
-* Divide el rango de búsqueda a la mitad
-* Muy eficiente: **O(log n)**
-* Ideal para grandes volúmenes de datos
-
-
-
-
-
+- Solo funciona en **listas ordenadas**
+- Divide el rango de búsqueda a la mitad
+- Muy eficiente: **O(log n)**
+- Ideal para grandes volúmenes de datos
