@@ -158,6 +158,7 @@ section::after {
 .author{
   text-align: center;
   list-style: none;
+  padding: 0;
 }
 
 img[alt~="center"] {
